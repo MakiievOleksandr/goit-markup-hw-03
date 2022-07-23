@@ -22,11 +22,10 @@
     <!-- header navigation -->
     <header class="header">
       <div class="conteiner box">
-        <div class="logo">
-          <a href="./index.html" class="header-logo link"
-            ><span class="logo-text">Web</span>Studio</a
-          >
-        </div>
+        <a href="/" class="header-logo link"
+          ><span class="logo-text">Web</span>Studio</a
+        >
+
         <nav>
           <ul class="header-list list box">
             <li class="header-item">
@@ -68,7 +67,7 @@
       <!-- Examples -->
       <section class="works section">
         <!-- Заголовок має бути прихований -->
-        <div class="conteiner addmb">
+        <div class="conteiner">
           <h1 class="works-title visually-hidden">Зразки наших робіт</h1>
           <ul class="works-buttons list">
             <li class="works-btn-item">
@@ -87,8 +86,7 @@
               <button type="button" class="works-btn">Маркетинг</button>
             </li>
           </ul>
-        </div>
-        <div class="conteiner">
+
           <ul class="works-list list">
             <li class="works-item">
               <a class="works-item-link link" href="">
@@ -98,8 +96,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="works-subtitle">Технокач</h2>
-                <p class="works-text">Веб-сайт</p>
+                <div class="works-thumb">
+                  <h2 class="works-subtitle">Технокач</h2>
+                  <p class="works-text">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="works-item">
@@ -110,8 +110,12 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="works-subtitle">Постер New Orlean vs Golden Star</h2>
-                <p class="works-text">Дизайн</p>
+                <div class="works-thumb">
+                  <h2 class="works-subtitle">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="works-text">Дизайн</p>
+                </div>
               </a>
             </li>
             <li class="works-item">
@@ -122,8 +126,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="works-subtitle">Ресторан Seafood</h2>
-                <p class="works-text">Додаток</p>
+                <div class="works-thumb">
+                  <h2 class="works-subtitle">Ресторан Seafood</h2>
+                  <p class="works-text">Додаток</p>
+                </div>
               </a>
             </li>
             <li class="works-item">
@@ -134,8 +140,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="works-subtitle">Проєкт Prime</h2>
-                <p class="works-text">Маркетинг</p>
+                <div class="works-thumb">
+                  <h2 class="works-subtitle">Проєкт Prime</h2>
+                  <p class="works-text">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li class="works-item">
@@ -146,8 +154,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="works-subtitle">Проєкт Boxes</h2>
-                <p class="works-text">Додаток</p>
+                <div class="works-thumb">
+                  <h2 class="works-subtitle">Проєкт Boxes</h2>
+                  <p class="works-text">Додаток</p>
+                </div>
               </a>
             </li>
             <li class="works-item">
@@ -158,9 +168,11 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="works-subtitle">Inspiration has no Borders</h2>
-                <p class="works-text">Веб-сайт</p></a
-              >
+                <div class="works-thumb">
+                  <h2 class="works-subtitle">Inspiration has no Borders</h2>
+                  <p class="works-text">Веб-сайт</p>
+                </div>
+              </a>
             </li>
             <li class="works-item">
               <a class="works-item-link link" href="">
@@ -170,8 +182,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="works-subtitle">Видання Limited Edition</h2>
-                <p class="works-text">Дизайн</p>
+                <div class="works-thumb">
+                  <h2 class="works-subtitle">Видання Limited Edition</h2>
+                  <p class="works-text">Дизайн</p>
+                </div>
               </a>
             </li>
             <li class="works-item">
@@ -182,8 +196,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="works-subtitle">Проєкт LAB</h2>
-                <p class="works-text">Маркетинг</p>
+                <div class="works-thumb">
+                  <h2 class="works-subtitle">Проєкт LAB</h2>
+                  <p class="works-text">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li class="works-item">
@@ -194,8 +210,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="works-subtitle">Growing Business</h2>
-                <p class="works-text">Додаток</p>
+                <div class="works-thumb">
+                  <h2 class="works-subtitle">Growing Business</h2>
+                  <p class="works-text">Додаток</p>
+                </div>
               </a>
             </li>
           </ul>
@@ -204,19 +222,19 @@
     </main>
     <!-- footer -->
     <footer class="basement">
-      <div class="basement-conteiner">
+      <div class="conteiner">
         <a href="/" class="basement-logo link"
           ><span class="logo-text">Web</span>Studio</a
         >
         <address class="basement-address">
           <p class="basement-text">м. Київ, пр-т Лесі Українки, 26</p>
           <ul class="basement-list list">
-            <li>
+            <li class="basement-item">
               <a href="mailto:info@devstudio.com" class="basement-contacts link"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="basement-item">
               <a href="tel:+380961111111" class="basement-contacts link"
                 >+38 096 111 11 11</a
               >

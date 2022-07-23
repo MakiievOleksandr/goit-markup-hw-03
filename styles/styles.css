@@ -43,7 +43,7 @@ body {
 }
 /*----------STUDIO PAGE-----------*/
 .title {
-  margin: 0 0 50px;
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -68,10 +68,14 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /*----------HEADER-----------*/
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   background-color: var(--first-bcg-color);
   border-bottom: 1px solid #ececec;
 }
@@ -92,11 +96,12 @@ p {
 .logo-text {
   color: var(--accent-color);
 }
-.logo {
+.header-logo {
   margin-right: 93px;
 }
 
 .header-link {
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -218,13 +223,18 @@ p {
 }
 .team-item {
   width: 270px;
-  display: block;
   text-align: center;
-  padding-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--first-bcg-color);
+}
+
+.team-thumb {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .team-subtitle {
@@ -232,7 +242,6 @@ p {
   font-size: 16px;
   line-height: 1.19;
   margin-bottom: 10px;
-  margin-top: 30px;
   letter-spacing: 0.03em;
   color: var(--titles-color);
 }
@@ -245,13 +254,10 @@ p {
 /*----------BASEMENT------------*/
 .basement {
   background-color: var(--sec-bcg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-.basement-conteiner {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 60px 15px;
-}
+
 .basement-logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -278,10 +284,11 @@ p {
   letter-spacing: 0.03em;
   color: var(--light-titles-color);
 }
-
+.basement-list > .basement-item:not(lc) {
+  margin-bottom: 9px;
+}
 .basement-contacts {
   display: inline-block;
-  margin-bottom: 9px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -297,7 +304,8 @@ p {
 .works-buttons {
   display: flex;
   justify-content: center;
-  gap: 8px;
+  column-gap: 8px;
+  margin-bottom: 50px;
 }
 
 .works-btn {
@@ -314,9 +322,6 @@ p {
   border-radius: 4px;
   cursor: pointer;
 }
-.addmb {
-  margin: 0 auto 56px;
-}
 
 .works-btn:hover,
 .works-btn:focus {
@@ -331,32 +336,23 @@ p {
 
 .works-item {
   width: 370px;
-  display: block;
-  text-align: center;
-  padding-bottom: 20px;
-  border: 1px solid #eeeeee;
 }
-
+.works-thumb {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
 .works-subtitle {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-top: 0;
   margin-bottom: 4px;
   color: var(--titles-color);
 }
 
-.works-subtitle:hover,
-.works-subtitle:focus {
-  color: var(--first-bcg-btn-color);
-}
 .works-text {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--text-color);
-}
-.works-text:hover,
-.works-text:focus {
-  color: var(--first-bcg-btn-color);
 }
