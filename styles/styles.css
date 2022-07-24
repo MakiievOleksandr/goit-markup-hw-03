@@ -59,7 +59,8 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-h1 h2,
+h1,
+h2,
 h3,
 h4,
 h5,
@@ -284,7 +285,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--light-titles-color);
 }
-.basement-list > .basement-item:not(lc) {
+.basement-list > .basement-item:not(:last-child) {
   margin-bottom: 9px;
 }
 .basement-contacts {
